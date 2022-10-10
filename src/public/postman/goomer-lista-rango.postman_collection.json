@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "0194f153-e613-459c-9fa5-43cb9db07a44",
+		"name": "Goomer Lista Rango",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Establishment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image\": \"imagem\",\r\n    \"name\": \"Restaurante\",\r\n    \"address\": {\r\n        \"country\": \"Brasil\",\r\n        \"state\": \"São Paulo\",\r\n        \"city\": \"Sorocaba\",\r\n        \"district\": \"Jardim America\",\r\n        \"street\": \"Rua Martinica\",\r\n        \"number\": \"460\",\r\n        \"postal_code\": \"18046-805\",\r\n        \"complement\": \"Residência Comercial\",\r\n        \"reference\": \"Escritório da Goomer\"\r\n    },\r\n    \"availabilities\": [\r\n        {\r\n            \"day_of_week\": \"segunda-feira\",\r\n            \"start_time\": \"09:00\",\r\n            \"end_time\": \"12:00\"\r\n        },\r\n        {\r\n            \"day_of_week\": \"segunda-feira\",\r\n            \"start_time\": \"13:00\",\r\n            \"end_time\": \"18:00\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/establishment",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"establishment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Establishment Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/establishment/50c18138-243a-4803-b3e6-96b5458b3b49",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"establishment",
+						"50c18138-243a-4803-b3e6-96b5458b3b49"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Establishments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/establishment",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"establishment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Establishment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/establishment/50c18138-243a-4803-b3e6-96b5458b3b49",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"establishment",
+						"50c18138-243a-4803-b3e6-96b5458b3b49"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Establishment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"50c18138-243a-4803-b3e6-96b5458b3b49\",\r\n    \"image\": \"imagem.png\",\r\n    \"name\": \"Restaurante\",\r\n    \"address\": {\r\n        \"id\": \"8e7d704e-cd73-42cf-8586-d5328173542f\",\r\n        \"country\": \"Brasil\",\r\n        \"state\": \"São Paulo\",\r\n        \"city\": \"Sorocaba\",\r\n        \"district\": \"Jardim America\",\r\n        \"street\": \"Rua Martinica\",\r\n        \"number\": \"460\",\r\n        \"postal_code\": \"18046-805\",\r\n        \"complement\": \"Residência Comercial\",\r\n        \"reference\": \"Escritório da Goomer\"\r\n    },\r\n    \"availabilities\": [\r\n        {\r\n            \"id\": \"7dda6ba5-da65-4ed5-b5a3-ba30b9a67a5b\",\r\n            \"day_of_week\": \"segunda-feira\",\r\n            \"start_time\": \"11:00\",\r\n            \"end_time\": \"12:00\"\r\n        },\r\n        {\r\n            \"id\": \"7dda6ba5-da65-4ed5-b5a3-ba30b9a67a5c\",\r\n            \"day_of_week\": \"segunda-feira\",\r\n            \"start_time\": \"13:00\",\r\n            \"end_time\": \"18:00\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/establishment/50c18138-243a-4803-b3e6-96b5458b3b49",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"establishment",
+						"50c18138-243a-4803-b3e6-96b5458b3b49"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
